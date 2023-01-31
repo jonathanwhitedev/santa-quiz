@@ -2,9 +2,7 @@
 
 View my live project here! [Voyager](https://jonathanwhitedev.github.io/voyager/) 
 
-Santa's Big Christmas Quiz is a interactive website based quiz readily available to provide fun Christmas themed quizes for all. Traditionally many office parties and family get togethers incorporate a quiz of some sort, and many have to make there own quiz from scratch, trawlliing the web to find questions and answers. This website aims to fill the gap for a lack of online quizes.   
-
-Voyager is a new website club and newsletter designed to celebrate our unique planet and the thousands of different cultures and traditions each country or territary around the world possesses. This weekly newsletter provides the user with fundamental and educational information on what each country has to offer from inspiration, adventure, travel tips, folklore tales and interviews, religious festivities, amazing food and drinks recipes, and local events. Therefore it remains inclusive for people to be involved without having to travel to featured country. The aim is to provide 1 month of 4 different and vibrant newsletters by sign up, which are emailed to the user to get a varied and informative grasp on each location. These are always fun filled and educational. A new month provides an entirely different and unique country to explore in fabulous detail. Our first month features Iceland.
+Santa's Big Christmas Quiz is a interactive website based quiz that is readily available to provide fun Christmas themed quizes for all. Traditionally many office parties and family get togethers incorporate a quiz of some sort, and many have to make there own quiz from scratch, trawlliing the web to find questions and answers. This website aims to fill the gap for a lack of online quizes.
 
 ![Responsive Mockup](docs/screenshots/amireponsive-voyager.png)
 
@@ -14,7 +12,7 @@ The following responsive screensizes of my website can also be found here: (http
 
 - __As a visiting user, I would like Christmas themed quizes readily available.__
 
-As part of the UX specification and planning phase it was noted that there is a lack of Chrismtas themed quizes on the web that are purely Chrismtas driven. The vast majority of those surveyed (100) agreed that there was no simple and fast solution to finding a christmas themed quiz online without spending a long time searching for one and very often eventually finding most sites were long winded, quizes generic and dated, or the questions were either too repetitive, easy, or mainly focused for children. Santa's Big Christmas Quiz aims to fill the gap to being the best source for all christmas quiz content on the web.
+As part of the UX specification and planning phase it was noted that there is a lack of Chrismtas themed quizes on the web that are purely Chrismtas driven. The vast majority of those surveyed (100) agreed that there was no simple and fast solution to finding a christmas themed quiz online without spending a long time searching for one and very often eventually finding most sites were long winded, quizes generic and dated, or the questions were either too repetitive and easy. Santa's Big Christmas Quiz aims to fill the gap to being the best source for all christmas quiz content on the web.
 
 - __As a visiting user, I would like free Christmas quizes.__
 
@@ -59,21 +57,17 @@ The interactive quiz pages runs through 15 clear and easy to navigate random que
 
 ## Features 
 
-Voyager includes the following;
+Santa's Big Christmas Quiz includes the following;
 
 ### Existing Features
 
-- __Navigation Bar__
+- __Images__
 
-  - Featured on every page, the fully responsive navigation bar includes links to the Logo "Vg" which takes the user back to the  Home page, an About page, Spotlight page and Sign Up page are also in the nav bar and is identical in each page to allow for easy navigation.
-  - This feature will allow the user to navigate effortlessly from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+  - Featured on the landing page and scores pages.
+  - A large cartoon Santa Claus appears on the landing page, confirming to the user they have landed on a website that is Christmas related.
+  - Scores Pages each have a Santa Claus image depicting the mood of the score and of Santa, adding amusement to the user. 
 
   ![Nav Bar](docs/screenshots/header-navbar.png)
-
-- __Form__
-  - The Form in the Sign up section provides the user a easy, fast, and efficient way to sign up to our newsletter without taking unnecessary information such as birthday, gender, home address etc. The informtion is transparent and the user undertsands this is a totally free service that is emailed in newsletter form, weekly. The user will see the value of signing up for the newsletter and what it brings to them. All detial are required to sign up (first name, last name and email) otherwise a mandatory message appears.
-
-  ![Form](docs/screenshots/form.png)
 
 - __Button__
   - A button is on every page and uses an intuitve way for the user to quickly scroll between all the pages (in order) of appearance. The user knows they have scrolled over the button as it inverts its colours and has a text transformation to capture the attention of the user.
@@ -82,18 +76,32 @@ Voyager includes the following;
 
 - __The Footer__ 
 
-  - The footer section includes links to the relevant social media sites for Voyager. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media where they can find out even more about Voyager and its accreditations elsewhere.
+  - The footer section includes links to the relevant social media sites for Santa's Big Christmas Quiz. The links will open to a new tab to allow easy navigation for the user. 
+  - The footer is valuable to the user as it encourages them to keep connected via social media where they can find out even more about Santa's Big Christmas Quiz and for sharing their scores.
 
   ![Footer](docs/screenshots/social-links-footer.png)
 
 
 ### Future features Left to Implement
 
-- Future features will include a brand new month discovering a completely new culture and country. This happens on the 1st day of a new calender month. Next months new feature country will be India.
-- A competion page section where by users can win gift vouchers with flight partners and or travel agents to spend towards their next trip. And other prizes including educational books or experiences. This page will contain information provided on how to partake in the competion. This will again make clear to the user that valid sign up credentials will be required in order to compete.
-- Share with us page. This page will be dedicated to the user to share their experiences and tips with the country they have visted in previous monthly features. This will be a toolbank for new and existing users that can see what benefits were provided by Voyager in the past and what values or experiences they gained by being a member. This may include, pictures with stories about visiting a featured loaction, restaurants they visited, meal they cooked, book they read etc. There will be form for users to share their experiences with us on past features which will provide a new link form with extra information and image uploads etc.
-- There will be a seperate search page and search bar included for the user to filter searches by keyword or country. If the country is not yet listed it will explain to the end user that this will be featured in a future release of monthly drops in time. This will be a great tool for end users to find previous features and refreshers if they need the information again to refer back to.
+- Future features will include a larger selection of questions. This is curently set to a bank of 15, but could be increaded to literally hundreds of populated multiple choice questions to keep the question bank varied and interesting for users that repeatedly visit.
+- An about page section where by users can find out more from the creator and author of the website and get in touch.
+- Questions that invlove even more interactivity, this can be done through animated questions, games related questions incorporating advanced JavaScript.
+- A Childrens section of the quiz that would give Children under the age of 11 a chance to partake in the quiz in a fun and educational way with slightly easier questions and fun animations/images.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Typography and Colour
 
