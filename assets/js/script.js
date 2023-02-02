@@ -1,4 +1,4 @@
-// the question bank
+// list of questions for quiz bank
 var questionBank= [
     {
         question : 'What happened in the 1914 Christmas Day truce during the First World War?',
@@ -132,6 +132,11 @@ function nextQuestion(){
 
 // click events to next button
 next.addEventListener('click',nextQuestion);
+
+// Back to Quiz button event
+function backToQuiz(){
+    location.reload();
+}
 
 // function to check the answers
 function checkAnswer(){
