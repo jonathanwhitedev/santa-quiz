@@ -113,7 +113,7 @@ function calcScore(e){
     else{
         document.getElementById(e.id).style.background= 'red';
     }
-    setTimeout(nextQuestion,300);
+    setTimeout(nextQuestion,500);
 }
 
 // function to display the next question
@@ -129,3 +129,24 @@ function nextQuestion(){
         scoreboard.style.display= 'block';
     }
 }
+
+// click events to next button
+next.addEventListener('click',nextQuestion);
+
+// function to check the answers
+function checkAnswer(){
+    var answerBank= document.getElementById('answerBank');
+    var answers= document.getElementById('answers');
+    answerBank.style.display= 'block';
+    scoreboard.style.display= 'none';
+    for(var a=0;a<questionBank.length;a++)
+    {
+        var list= document.createElement('li');
+        list.innerHTML= questionBank[a].answer;
+        answers.appendChild(list);
+    }
+}
+
+
+displayQuestion();
+
