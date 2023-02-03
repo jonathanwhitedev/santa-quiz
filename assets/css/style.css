@@ -134,3 +134,31 @@ footer {
     margin-bottom: 1rem;
     font-size: 1.4em;
 }
+.option{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    border: solid 0.1rem #faf9f9 ;
+    width: 15rem;
+    background: #ffffff;
+    border-radius: 1rem;
+}
+.option:hover{
+    color: #b59d00;
+}
+ol{
+    position: relative;
+    padding: 0 1.5rem;
+    color: #000000;
+}
+span{
+    display: block;
+    padding: 0.1rem 0.7rem;
+    border-radius: 1rem;
+}
+#answer{
+    margin-top: 2.5rem;
+}
+#stat{
+    margin-top: 1.5rem;
+    color: #000000;
+}
