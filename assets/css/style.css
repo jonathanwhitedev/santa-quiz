@@ -117,3 +117,20 @@ footer {
     padding: 5%;
     color: #043b0f;
 }
+/* Questions and Scoreboard styling */
+.questions{
+    margin: auto;
+    width: 90vw;
+    background: #00899b88;
+    cursor: default;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50px;
+    line-height: 1.4em;
+}
+#question{
+    margin-bottom: 1rem;
+    font-size: 1.4em;
+}
