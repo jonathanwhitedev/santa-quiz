@@ -96,7 +96,9 @@ button {
     color: #ffffff;
     background: #7c0017;
     font-family: 'Cormorant Garamond', sans-serif;
-    margin-top: 10px
+    margin-top: 10px;
+    cursor: pointer;
+
 }
 button:active{
     background: #ffffff;
@@ -165,6 +167,7 @@ span{
     display: block;
     padding: 0.1rem 0.7rem;
     border-radius: 1rem;
+    cursor: pointer;
 }
 #answer{
     margin-top: 2.5rem;
