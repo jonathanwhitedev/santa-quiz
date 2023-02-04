@@ -110,7 +110,7 @@ button:active{
     line-height: 1em;
     position: relative;
     bottom: 300px;
-
+    
 }
 
 /* footer */
@@ -134,7 +134,7 @@ button:active{
     color: #043b0f;
 }
 /* Questions and Scoreboard styling */
-.questions{
+.questions {
     margin: auto;
     width: 90vw;
     background: #00899b88;
@@ -169,6 +169,8 @@ span{
     border-radius: 1rem;
     cursor: pointer;
 }
+
+
 #answer{
     margin-top: 2.5rem;
 }
