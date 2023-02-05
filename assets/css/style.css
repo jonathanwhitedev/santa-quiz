@@ -131,9 +131,10 @@ button:active{
 .social-networks i {
     font-size: 160%;
     padding: 5%;
-    color: #043b0f;
+    color:  #7c0017;
 }
 /* Questions and Scoreboard styling */
+
 .questions {
     margin: auto;
     width: 90vw;

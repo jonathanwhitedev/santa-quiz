@@ -105,24 +105,24 @@ Santa's Big Christmas Quiz includes the following;
 
 ## Typography and Colour
 
-- Typography was taken from Google Fonts using 2 base fonts, "Lora" and "Roboto". I felt these complimented each other very well, were clean and clear to read and easily accessible. Lora was used mainly for larger h1 and h3 texts and Roboto for everything else. With colour schemes I chose to use 3 colours using hex (RGB was used initially until i converted to hex) I used a darker navy blue (#00426e), mid blue (#8eaec4) and basic white (#fff) to keep a uniformed approach. I then used a background for my vidoes to have a deeper and darker brightness value using (#030a0f66) so that the white text would pop off the display video. I then took the brightness down further for the header using the same colour to differentiate from the background video.
+- Typography was taken from Google Fonts using 1 base font, "Cormorant Garamond". I felt this complimented the Christmas theme well, was clean and clear to read and easily accessible. With colour schemes I chose to use 3 Christmas themed colours, Red, Gold and Blue. Being mainly primary colours these work very well together and make the style eye catching. These were applied using hex, red (#7c0017), gold (#b59d00) and blue (#00899b88). Then Black (#000000) and White (#ffffff) were used for the typography for Questions and Buttons.
 
 Google Fonts can be found here (https://fonts.google.com/)
 
 
 ## Wireframes
-- I used Balsamiq for my wireframes and drew a rough design of what I wanted my website to look like with background images instead of video due to it's limitations, all content including wording is accurate and adeared to throughout into deployment of website. Agai due to limitations i wanted the wording to be bigger on the Voyager text but with balsamiq it wasnt possible to make the main text big enough in the page, I made sure to carr this over into my website. You can see screenshots of these pages below, the only page not included is the welcome page which i didn't remember to add at the time!
+- I used Balsamiq for my wireframes and drew a rough design of what I wanted my website quiz to look like with accurate images and cartoons of Santa with relevant sizing. Due to limitations I wanted the wording to be bigger on the Opening text "Santa's Big Christmas Quiz" but with balsamiq it wasn't possible to make the main text big enough in the page, I made sure to carry this over into my website. You can see screenshots of these pages below.
 
 Index Page
 ![Balsamic Index](docs/screenshots/balsamiq-wireframes-index.png)
 
-About Page
+Quiz Question Page
 ![Balsamic About](docs/screenshots/balsamiq-wireframes-about.png)
 
-Spotlight Page
+Result Page
 ![Balsamic Spotlight](docs/screenshots/balsamiq-wireframes-spotlight.png)
 
-Sign-Up Page
+Answer Page
 ![Balsamic Sign-Up](docs/screenshots/balsamiq-wireframes-signup.png)
 
 ## Technology
@@ -132,9 +132,10 @@ __Various technologies were used in the entire process of building this website 
 - GitPod. Where the design came to life in the physical coding of the website building the files and folders and writing the code to commit back to GitHub. This beginning of this Readme file was written before coding took place and exxtra folders were added for HTML and Assets including CSS and media.
 - HTML. The building block for all the code and written across 5 pages, index, about, spotlight, signup, welcome.
 - CSS. The style of the website linked via stylesheets to the HTML code.
-- Fontawesome. Used to take social media icons for the bottom of the page.
+- JavaScript. Used for all the questions and variables of the quiz, including calculating the score through additions, changing the colour of the question "Green" for correctly answered and "Red" for incorrect and event listeners.
+- Fontawesome. Used to take social media icons for the bottom of the results page.
 - Google Fonts. All font styles were taken to add a more unique design.
-- Pexels. Where all video media came from using mp4 files.
+- Google images. Images taken from searching for Santa cartoon images and of bad santa.
 - W3 Validator. Used to ensure all HTML code was working with no errors.
 - Jigsaw Validator. USed to ensure all CSS code met best practices and was working with no errors.
 - Lightouse. Used to ensure testing of performance met expectations wit no severe errors or performance issues. 
