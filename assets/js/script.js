@@ -77,6 +77,14 @@ function checkAnswer(){
     }
 }
 
+function changeSantaImage() {
+    if (score <= 7) {
+      document.getElementById('santa-img').src='assets/images/bad-santa.jpeg';   
+     } else if (score <=14) {
+      document.getElementById('santa-img').src='assets/images/good-santa.jpeg';
+     
+}
+}
 
 displayQuestion();
 
