@@ -77,11 +77,22 @@ function checkAnswer(){
     }
 }
 
+// function to change the Santa image based on the score
 function changeSantaImage() {
     if (score <= 7) {
       document.getElementById('santa-img').src='assets/images/bad-santa.jpeg';   
      } else if (score <=14) {
       document.getElementById('santa-img').src='assets/images/good-santa.jpeg';
+     
+}
+}
+
+// function to change the results text based on the score, less than or equal to 7, less than or equal to 14, a default of 15 for Winner
+function changeScoreText() {
+    if (score <= 7) {
+      document.getElementById('score-text').innerText='Bad Santa!' 
+     } else if (score <=14) {
+      document.getElementById('score-text').innerText='Good Santa!'
      
 }
 }
