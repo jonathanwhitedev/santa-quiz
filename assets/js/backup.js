@@ -29,7 +29,6 @@ function calcScore(e){
     if(e.innerHTML===questionBank[i].answer && score<questionBank.length)
     {
         score= score+1;
-        document.getElementById("running-score").innerText = score + "/15";
         document.getElementById(e.id).style.background= 'green';
     }
     else{
@@ -76,4 +75,3 @@ function checkAnswer(){
 
 
 displayQuestion();
-
