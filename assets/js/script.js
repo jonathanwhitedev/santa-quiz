@@ -1,19 +1,19 @@
-var question= document.getElementById('question');
-var quizContainer= document.getElementById('quiz-container');
-var scorecard= document.getElementById('scorecard');
-var option0= document.getElementById('option0');
-var option1= document.getElementById('option1');
-var option2= document.getElementById('option2');
-var option3= document.getElementById('option3');
-var next= document.querySelector('.next');
-var points= document.getElementById('score');
-var span= document.querySelectorAll('span');
-var i=0;
-var score= 0;
+const question= document.getElementById('question');
+const quizContainer= document.getElementById('quiz-container');
+const scorecard= document.getElementById('scorecard');
+const option0= document.getElementById('option0');
+const option1= document.getElementById('option1');
+const option2= document.getElementById('option2');
+const option3= document.getElementById('option3');
+const next= document.querySelector('.next');
+const points= document.getElementById('score');
+const span= document.querySelectorAll('span');
+let i=0;
+let score= 0;
 
 // function to display the questions 
 function displayQuestion(){
-    for(var a=0;a<span.length;a++){
+    for(let a=0;a<span.length;a++){
         span[a].style.background='none';
     }
     question.innerText= `${questionBank[i].question}`;
@@ -29,7 +29,7 @@ function calcScore(e){
     if(e.innerText===questionBank[i].answer && score<questionBank.length)
     {
         score= score+1;
-        document.getElementById("running-score").innerText = score + "/15";
+        document.getElementById("running-score").innerText = 'Correctly Answered: ' + score + "/15";
         document.getElementById(e.id).style.background= 'green';
     }
     else{
@@ -46,9 +46,12 @@ function nextQuestion(){
         displayQuestion();
     }
     else{
+        changeSantaImage();
+        changeScoreText();
         points.innerText= score+ '/'+ questionBank.length;
         quizContainer.style.display= 'none';
         scoreboard.style.display= 'block';
+        
     }
 }
 
@@ -62,25 +65,16 @@ function backToQuiz(){
 
 // function to check the answers
 function checkAnswer(){
-    var answerBank= document.getElementById('answerBank');
-    var answers= document.getElementById('answers');
+    const answerBank= document.getElementById('answerBank');
+    const answers= document.getElementById('answers');
     answerBank.style.display= 'block';
     scoreboard.style.display= 'none';
-    for(var a=0;a<questionBank.length;a++)
+    for(let a=0;a<questionBank.length;a++)
     {
-        var list= document.createElement('li');
+        const list= document.createElement('li');
         list.innerText= questionBank[a].answer;
         answers.appendChild(list);
     }
-}
-
-function changeSantaImage() {
-    if (score < 7) {
-      document.getElementById('santa-img').src='assets/images/bad-santa.jpeg';   
-     } else {
-      document.getElementById('santa-img').src='assets/images/good-santa.jpeg';
-     } 
-
 }
 
 
