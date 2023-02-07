@@ -168,6 +168,7 @@ button:active{
     width: 90vw;
     background: #3b81d6c6;
     cursor: default;
+    border-style: groove;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -204,6 +205,7 @@ span{
     padding: 2px auto;
     width: 90vw;
     background: #d7be69;
+    border-style: groove;
     border-radius: 1rem;
     display: flex;
     justify-content: space-around;
@@ -217,12 +219,12 @@ span{
     margin-top: 2.5rem;
 }
 #stat{
-    margin-top: 1.5rem;
     color: #000000;
 }
 #scoreboard,#answerBank{
     width: 20rem;
     background: #d3caca;
+    border-style: groove;
     border-radius: 1rem;
     padding: 0.5rem;
     text-align: center;
