@@ -1,6 +1,6 @@
 # Santa's Big Christmas Quiz
 
-View my live project here! [Voyager](https://jonathanwhitedev.github.io/voyager/) 
+View my live project here! [Santa's Big Christmas Quiz](https://jonathanwhitedev.github.io/santa-quiz/) 
 
 Santa's Big Christmas Quiz is a interactive website based quiz that is readily available to provide fun Christmas themed quizes for all. Traditionally many office parties and family get togethers incorporate a quiz of some sort, and many have to make there own quiz from scratch, trawlliing the web to find questions and answers. This website aims to fill the gap for a lack of online quizes.
 
@@ -30,30 +30,34 @@ Of half of the group surveyed, they agreed it would be useful to be able to shar
 ## Home Landing Page
 The landing page provides a simple and clean layout with clear information on what the website offers. "Santa's Big Christmas Quiz" is displayed in large font with a cartoon Santa Claus displayed above. This is followed with a clickable button under the main heading texts of "begin" which sends the user through onto the next page and the start of the quiz. Subtle Christmas themed colours envoke the the memories and familiarity of the season. Lastly a footer of the social media links for Santa's Big Christmas Quiz is also provided on the landing page.
 
-![Landing Page](docs/screenshots/landing-page.png)
+![Landing Page](docs/screenshots/home-page.png)
 
 ## Quiz Pages
 
 The interactive quiz pages runs through 15 clear and easy to navigate random questions of 15 in total. There are 4 multiple choice options to chose for the questions and require clicking on the "Submit" button to get to the next question. Each page follows the last and has simple easy to read font.  
 
-![About Page](docs/screenshots/about-page.png)
+![Quiz Page](docs/screenshots/questions-page.png)
 
-## Bad Santa
+## Bad Santa! Result
 
-"Bad Santa!" appears upon the end of the quiz if the user scores below half of the 15 questions correctly (0-7). A picture from the film "Bad Santa" accompanies the headed text with the score. A "Restart Quiz" button takes the user back to the homepage to begin the quiz again if they so choose. Lastly a footer of the social media links for "Share My Score" is also provided.
+"Bad Santa!" appears upon the end of the quiz if the user scores below half of the 15 questions correctly (0-7). A picture from the film "Bad Santa" accompanies the headed text with the score. A "Restart Quiz" button takes the user back to the homepage to begin the quiz again if they so choose. Another button "Check Answers" is provided for the user to check the correct answers. Lastly a footer of the social media links for "Share My Score" is also provided.
 
-![Spotlight Page](docs/screenshots/spotlight-page.png)
+![Bad Santa Result](docs/screenshots/badsanta-result.png)
 
-## Good Santa
-"Good Santa!" appears upon the end of the quiz if the user scores over half of the 15 questions correctly (8-14) But not all 15. A picture of Santa in sunglasses making okay hand gestures appears to accompany the headed text with the score. A "Restart Quiz" button takes the user back to the homepage to begin the quiz again if they so choose. Lastly a footer of the social media links for "Share My Score" is also provided.
+## Santa Baby! Result
+"Santa Baby!" appears upon the end of the quiz if the user scores over half of the 15 questions correctly (8-14) But not all 15. A picture of Santa in sunglasses making okay hand gestures appears to accompany the headed text with the score. A "Restart Quiz" button takes the user back to the homepage to begin the quiz again if they so choose. Another button "Check Answers" is provided for the user to check the correct answers. Lastly a footer of the social media links for "Share My Score" is also provided.
 
-![Sign-Up Page](docs/screenshots/sign-up-page.png)
+![Santa Baby Result](docs/screenshots/santababy-result.png)
 
-## You're A Winner!
-"You're A Winner!" appears upon the end of the quiz if the user scores all of the 15 questions correctly (15). A picture of a happy Santa with hands full of dollar bills appears to accompany the headed text with the score. A "Restart Quiz" button takes the user back to the homepage to begin the quiz again if they so choose. Lastly a footer of the social media links for "Share My Score" is also provided.
+## You're A Winner! Result 
+"You're A Winner!" appears upon the end of the quiz if the user scores all of the 15 questions correctly (15). A picture of a happy Santa with hands full of dollar bills appears to accompany the headed text with the score. A "Restart Quiz" button takes the user back to the homepage to begin the quiz again if they so choose. Another button "Check Answers" is provided for the user to check the correct answers. Lastly a footer of the social media links for "Share My Score" is also provided.
 
-![Welcome Page](docs/screenshots/welcome-page.png)
+![You're A Winner Result](docs/screenshots/winner-result.png)
 
+## Answer Page 
+Clicking the "Check Answers" button as mentioned in the results pages, displays all the correct answers to the questions in the quiz. Another "Restart Quiz" button is provided.
+
+![Answer Page](docs/screenshots/answers-page.png)
 
 ## Features 
 
@@ -65,21 +69,59 @@ Santa's Big Christmas Quiz includes the following;
 
   - Featured on the landing page and scores pages.
   - A large cartoon Santa Claus appears on the landing page, confirming to the user they have landed on a website that is Christmas related.
-  - Scores Pages each have a Santa Claus image depicting the mood of the score and of Santa, adding amusement to the user. 
 
-  ![Nav Bar](docs/screenshots/header-navbar.png)
+  ![Santa Logo](docs/screenshots/santa-logo.png)
+
+- __Variable Images and Texts__
+
+  - Scores Pages each have a Santa Claus image and text depicting the mood of the score and of Santa, adding amusement to the user. These are:
+  - "Bad Santa"
+
+  ![Bad Santa](assets/images/bad-santa.jpeg)
+
+  - "Santa Baby"
+
+  ![Santa Baby](assets/images/good-santa.jpeg)
+
+  - "You're A Winner" 
+
+  ![Winner Santa](assets/images/winner-santa.webp)
 
 - __Button__
-  - A button is on every page and uses an intuitve way for the user to quickly scroll between all the pages (in order) of appearance. The user knows they have scrolled over the button as it inverts its colours and has a text transformation to capture the attention of the user.
+  - A button is on every page and uses and stands out in a christmas red colour. This is site wide using the same styling and colour to reinforce that this is always a button.
  
-  ![Button](docs/screenshots/button.png)
+  ![Button](docs/screenshots/buttons.png)
 
 - __The Footer__ 
 
-  - The footer section includes links to the relevant social media sites for Santa's Big Christmas Quiz. The links will open to a new tab to allow easy navigation for the user. 
+  - The footer section included in home and results pages gives links to the relevant social media sites for Santa's Big Christmas Quiz. The links will open to a new tab to allow easy navigation for the user. 
   - The footer is valuable to the user as it encourages them to keep connected via social media where they can find out even more about Santa's Big Christmas Quiz and for sharing their scores.
 
-  ![Footer](docs/screenshots/social-links-footer.png)
+  ![Footer](docs/screenshots/footer-social.png)
+
+  - __Statistics Container__ 
+
+  - This is a container in gold (#d7be69) displaying a rolling questions and correctly answered information to the user using javascript interaction.
+
+  ![Statistics](docs/screenshots/statistics-container.png)
+
+  - __Quiz Container__ 
+
+  - This is a container in blue (#3b81d6c6) displaying the quiz questions and mutiple choice options to the user using javascript interaction.
+
+  ![Questions](docs/screenshots/quiz-container.png)
+
+- __Correct Answer Interaction__ 
+
+  - When a user clicks an list item (question) that is correctly answered, an interaction appears highlighting to the user that the question is correct by filling the question item with a green colour temporarily before moving onto the next question.
+
+  ![Correct](docs/screenshots/correct-answer.png) 
+
+- __Incorrect Answer Interaction__ 
+
+  - When a user clicks an list item (question) that is incorrectly answered, an interaction appears highlighting to the user that the question is incorrect by filling the question item with a red colour temporarily before moving onto the next question.
+
+  ![Incorrect](docs/screenshots/wrong-answer.png)  
 
 
 ### Future features Left to Implement
