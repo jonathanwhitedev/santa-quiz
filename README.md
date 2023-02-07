@@ -132,19 +132,6 @@ Santa's Big Christmas Quiz includes the following;
 - A Childrens section of the quiz that would give Children under the age of 11 a chance to partake in the quiz in a fun and educational way with slightly easier questions and fun animations/images.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Typography and Colour
 
 - Typography was taken from Google Fonts using 1 base font, "Cormorant Garamond". I felt this complimented the Christmas theme well, was clean and clear to read and easily accessible. With colour schemes I chose to use 3 Christmas themed colours, Red, Gold and Blue. Being mainly primary colours these work very well together and make the style eye catching. These were applied using hex, red (#7c0017), gold (#d7be69) and blue (#3b81d6c6). Then Black (#000000) and White (#ffffff) were used for the typography for Questions and Buttons.
@@ -202,7 +189,8 @@ It is noticed however that video backgrounds do not tend to work on smartphones 
   - No performance issues were returned when passing through the official Lighthouse feature on google chrome dev tools [https://developer.chrome.com/docs/lighthouse/overview/] on all 5 HTML pages of website. Scores of over 90% were present throughout as per following screenshots:
 
   Index Page
- ![Index Test](docs/screenshots/chromelighthouseresult-index.png)
+ ![Index Test](docs/screenshots/chromelighthouseresul
+ t-index.png)
   
   About Page
  ![About Test](docs/screenshots/chromelighthouseresult-about.png)
