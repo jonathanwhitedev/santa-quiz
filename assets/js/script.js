@@ -11,7 +11,9 @@ const span = document.querySelectorAll('span');
 let i = 0;
 let score = 0;
 
-// function to display the questions 
+/**
+Function to display the questions and provide statistics for rolling information
+**/ 
 function displayQuestion() {
     for (let a = 0; a < span.length; a++) {
         span[a].style.background = 'none';
@@ -24,7 +26,12 @@ function displayQuestion() {
     stat.innerText = "Question" + ' ' + (i + 1) + ' ' + 'of' + ' ' + questionBank.length;
 }
 
-// function to calculate the score
+/**
+Function to display and calculate the score with a running score linked to container.
+Incremented by +1 if correctly answered.
+If and else statements in place to change colour of span to either green or red depending on answer.
+500 of a second timeout set to change to next question.
+**/ 
 function calcScore(e) {
     if (e.innerText === questionBank[i].answer && score < questionBank.length) {
         score = score + 1;
@@ -36,7 +43,11 @@ function calcScore(e) {
     setTimeout(nextQuestion, 500);
 }
 
-// function to display the next question
+/**
+Function to display the next question
+if and else statements in place to change image and texts depending on results
+and keep a rolling tally for this.
+**/ 
 function nextQuestion() {
     if (i < questionBank.length - 1) {
         i = i + 1;
@@ -51,15 +62,22 @@ function nextQuestion() {
     }
 }
 
-// click events to next button
+/**
+Click events for next button
+**/ 
 next.addEventListener('click', nextQuestion);
 
-// Back to Quiz button event
+/**
+Back to quiz button event
+**/ 
 function backToQuiz() {
     location.reload();
 }
 
-// function to check the answers
+/**
+Function to display and check the answers
+and list them in order
+**/ 
 function checkAnswer() {
     const answerBank = document.getElementById('answerBank');
     const answers = document.getElementById('answers');
@@ -72,7 +90,11 @@ function checkAnswer() {
     }
 }
 
-// function to change the Santa image based on the score
+/**
+Function to display the santa image in results, based on scores of
+either equal or less than 7 or equal or less than 14
+(default is already set to maximum of 15/15 in quiz.html)
+**/ 
 function changeSantaImage() {
     if (score <= 7) {
         document.getElementById('santa-img').src = 'assets/images/bad-santa.jpeg';
@@ -82,7 +104,11 @@ function changeSantaImage() {
     }
 }
 
-// function to change the results text based on the score, less than or equal to 7, less than or equal to 14, a default of 15 for Winner
+/**
+Function to display the text in results, based on scores of
+either equal or less than 7 or equal or less than 14
+(default text is already set to maximum of 15/15 in quiz.html)
+**/ 
 function changeScoreText() {
     if (score <= 7) {
         document.getElementById('score-text').innerText = 'BAD SANTA!';
