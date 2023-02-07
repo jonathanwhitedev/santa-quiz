@@ -58,12 +58,10 @@ h4 {
 
 .headingbig {
     font-size: 6em;
-    color:  #b59d00;
+    color:  #d7be69;
     line-height: 1em;
     position: relative;
     bottom: 158px;
-    
-
 }
 
 .headingchristmas {
@@ -77,7 +75,7 @@ h4 {
 
 .headingquiz {
     font-size: 4em;
-    color:  #b59d00;
+    color:  #d7be69;
     line-height: 1em;
     position: relative;
     bottom: 302px;
@@ -102,6 +100,7 @@ button {
     font-family: 'Cormorant Garamond', sans-serif;
     margin-top: 10px;
     cursor: pointer;
+    border-style: groove;
 
 }
 button:active{
@@ -218,9 +217,8 @@ span{
 #answer{
     margin-top: 2.5rem;
 }
-#stat{
-    color: #000000;
-}
+
+
 #scoreboard,#answerBank{
     width: 20rem;
     background: #d3caca;
@@ -256,6 +254,10 @@ span{
 }
 #answers{
     margin-top: 1rem;
+}
+
+.answers-text{
+    text-decoration: underline;
 }
 
 .result-text {

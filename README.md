@@ -113,17 +113,23 @@ Google Fonts can be found here (https://fonts.google.com/)
 ## Wireframes
 - I used Balsamiq for my wireframes and drew a rough design of what I wanted my website quiz to look like with accurate images and cartoons of Santa with relevant sizing. Due to limitations I wanted the wording to be bigger on the Opening text "Santa's Big Christmas Quiz" but with balsamiq it wasn't possible to make the main text big enough in the page, I made sure to carry this over into my website. You can see screenshots of these pages below.
 
-Index Page
-![Balsamic Index](docs/screenshots/balsamiq-wireframes-index.png)
+Quiz Home Page
+![Balsamic Home Page](docs/screenshots/Balsamic-screenshot-home.png)
 
 Quiz Question Page
-![Balsamic About](docs/screenshots/balsamiq-wireframes-about.png)
+![Balsamic Question Page](docs/screenshots/Balsamic-screenshot-questions.png)
 
-Result Page
-![Balsamic Spotlight](docs/screenshots/balsamiq-wireframes-spotlight.png)
+Result Page Bad Santa
+![Balsamic Bad Santa Result](docs/screenshots/Balsamic-screenshot-badsanta.png)
+
+Result Page Santa Baby
+![Balsamic Santa Baby Result](screenshots/Balsamic-screenshot-santababy.png)
+
+Result Page You're A Winner
+![Balsamic You're A Winner Result](docs/screenshots/Balsamic-screenshot-winnersanta.png)
 
 Answer Page
-![Balsamic Sign-Up](docs/screenshots/balsamiq-wireframes-signup.png)
+![Balsamic Sign-Up](docs/screenshots/Balsamic-screenshot-answers.png)
 
 ## Technology
 __Various technologies were used in the entire process of building this website as follows;__
