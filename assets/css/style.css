@@ -17,11 +17,13 @@ body {
 .santabig {
     padding: 2em;
     width: 10em;
+    height: 12em;
 }
 
 .santasmall {
     padding-top: 2em;
     width: 5em;
+    height: 6em;
 }
 
 h1 {
