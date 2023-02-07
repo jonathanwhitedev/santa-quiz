@@ -93,3 +93,5 @@ function changeScoreText() {
 }
 
 displayQuestion();
+
+window.addEventListener('DOMContentLoaded', initializeQuiz);
