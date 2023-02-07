@@ -76,4 +76,4 @@ const questionBank = [{
         option: ['1925', '1890', '1912', '1843'],
         answer: '1843'
     }
-]
+];

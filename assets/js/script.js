@@ -85,9 +85,9 @@ function changeSantaImage() {
 // function to change the results text based on the score, less than or equal to 7, less than or equal to 14, a default of 15 for Winner
 function changeScoreText() {
     if (score <= 7) {
-        document.getElementById('score-text').innerText = 'BAD SANTA!'
+        document.getElementById('score-text').innerText = 'BAD SANTA!';
     } else if (score <= 14) {
-        document.getElementById('score-text').innerText = 'SANTA BABY!'
+        document.getElementById('score-text').innerText = 'SANTA BABY!';
 
     }
 }
