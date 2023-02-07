@@ -62,9 +62,9 @@ const questionBank = [{
         answer: 'Band Aid - Do They Know its Christmas?'
     },
     {
-        question: 'Where are the Christmas presents brought by a witch?',
-        option: ['Spain', 'Italy', 'Portugal', 'France'],
-        answer: 'Italy'
+        question: 'Which Christmas decoration do the Royal Family not have on their trees?',
+        option: ['Lights', 'Baubles', 'An Angel', 'Tinsel'],
+        answer: 'Tinsel'
     },
     {
         question: 'What is the most popular meal for Christmas in Japan?',
