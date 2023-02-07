@@ -28,7 +28,10 @@
    <!-- quiz-container -->
    <div id="quiz-container">
     <!-- question container -->
+    <div class="statistics">
+    <h4 id="stat"></h4>
     <h4 id="running-score">0/15</h4> <!-- REQUIRES STYLING!!!!!!!!!!!!!!!! -->
+    </div>
       <div class="questions">
         <h2 id="question"></h2>
         <ol type="A">
@@ -37,7 +40,7 @@
             <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
             <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
         </ol>
-        <h4 id="stat"></h4>
+        
        </div>
 
       <div class="buttons">
@@ -50,9 +53,10 @@
 
 <!-- scoreboard section -->
 <div id="scoreboard">
-    <img id="santa-img" class="santa-image" src="assets/images/winner-santa.webp" alt="santa"> <!-- ISSUES DISPLAYING DIFFERENT IMAGES FROM JS FUNCTION 77-84 -->
+    <!-- Image and Text section for changing images/text based on score with default set to winner -->
+    <img id="santa-img" class="santa-image" src="assets/images/winner-santa.webp" alt="santa"> 
     <h2 id="score-text">You're A Winner!</h2>
-    <h2 id="score-title">You Scored</h2>
+    <h2 id="score-title">You Scored:</h2>
     <h2 id="score"></h2>
     <button type="button" id="score-btn" onclick="backToQuiz()">Restart Quiz</button>
     <button type="button" id="check-answer" onclick="checkAnswer()">Check Answers</button>
