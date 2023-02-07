@@ -250,7 +250,10 @@ span {
     margin: 1rem 0;
 }
 
-#score-btn,
+#score-btn {
+    margin-top: 1rem;
+}
+
 #check-answer {
     margin-top: 1rem;
 }
