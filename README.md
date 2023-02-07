@@ -105,7 +105,7 @@ Santa's Big Christmas Quiz includes the following;
 
 ## Typography and Colour
 
-- Typography was taken from Google Fonts using 1 base font, "Cormorant Garamond". I felt this complimented the Christmas theme well, was clean and clear to read and easily accessible. With colour schemes I chose to use 3 Christmas themed colours, Red, Gold and Blue. Being mainly primary colours these work very well together and make the style eye catching. These were applied using hex, red (#7c0017), gold (#b59d00) and blue (#00899b88). Then Black (#000000) and White (#ffffff) were used for the typography for Questions and Buttons.
+- Typography was taken from Google Fonts using 1 base font, "Cormorant Garamond". I felt this complimented the Christmas theme well, was clean and clear to read and easily accessible. With colour schemes I chose to use 3 Christmas themed colours, Red, Gold and Blue. Being mainly primary colours these work very well together and make the style eye catching. These were applied using hex, red (#7c0017), gold (#d7be69) and blue (#3b81d6c6). Then Black (#000000) and White (#ffffff) were used for the typography for Questions and Buttons.
 
 Google Fonts can be found here (https://fonts.google.com/)
 
@@ -123,7 +123,7 @@ Result Page Bad Santa
 ![Balsamic Bad Santa Result](docs/screenshots/Balsamic-screenshot-badsanta.png)
 
 Result Page Santa Baby
-![Balsamic Santa Baby Result](screenshots/Balsamic-screenshot-santababy.png)
+![Balsamic Santa Baby Result](docs/screenshots/Balsamic-screenshot-santababy.png)
 
 Result Page You're A Winner
 ![Balsamic You're A Winner Result](docs/screenshots/Balsamic-screenshot-winnersanta.png)
@@ -138,7 +138,7 @@ __Various technologies were used in the entire process of building this website 
 - GitPod. Where the design came to life in the physical coding of the website building the files and folders and writing the code to commit back to GitHub. This beginning of this Readme file was written before coding took place and exxtra folders were added for HTML and Assets including CSS and media.
 - HTML. The building block for all the code and written across 5 pages, index, about, spotlight, signup, welcome.
 - CSS. The style of the website linked via stylesheets to the HTML code.
-- JavaScript. Used for all the questions and variables of the quiz, including calculating the score through additions, changing the colour of the question "Green" for correctly answered and "Red" for incorrect and event listeners.
+- JavaScript. Used for all the questions and variables of the quiz, including calculating the score through additions, changing the colour of the question "Green" for correctly answered and "Red" for incorrect answered questions. Additionally, functions were added to change the image and text depending on the Results score.
 - Fontawesome. Used to take social media icons for the bottom of the results page.
 - Google Fonts. All font styles were taken to add a more unique design.
 - Google images. Images taken from searching for Santa cartoon images and of bad santa.
