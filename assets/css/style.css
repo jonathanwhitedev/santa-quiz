@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond&display=swap");
 html {
     height: 100%;
 }
@@ -119,6 +119,8 @@ button:active{
 .next {
     margin: 5px auto;
 }
+
+
 
 /* footer */
 
@@ -242,7 +244,7 @@ span{
     margin-top: 1rem;
 }
 #score{
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 10px;
 }
 #answerBank li{
@@ -253,3 +255,13 @@ span{
 #answers{
     margin-top: 1rem;
 }
+
+.result-text {
+    font-family: Anton;
+    font-size: 2em;
+    letter-spacing: 1px;
+    color: #d7be69;
+    -webkit-text-stroke: 0.5px #000000;
+    margin: auto;
+}
+
