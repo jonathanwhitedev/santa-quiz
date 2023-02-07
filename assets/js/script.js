@@ -48,7 +48,7 @@ function nextQuestion(){
     else{
         changeSantaImage();
         changeScoreText();
-        points.innerText= score+ '/'+ questionBank.length;
+        points.innerText= 'You Scored:  ' + score + '/'+ questionBank.length;
         quizContainer.style.display= 'none';
         scoreboard.style.display= 'block';
         
