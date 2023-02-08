@@ -63,11 +63,6 @@ function nextQuestion() {
 }
 
 /**
-Click events for next button
-**/ 
-next.addEventListener('click', nextQuestion);
-
-/**
 Back to quiz button event
 **/ 
 function backToQuiz() {
@@ -91,9 +86,9 @@ function checkAnswer() {
 }
 
 /**
-Function to display the santa image in results, based on scores of
-either equal or less than 7 or equal or less than 14
-(default is already set to maximum of 15/15 in quiz.html)
+* Function to display the santa image in results, based on scores of
+* either equal or less than 7 or equal or less than 14
+* (default is already set to maximum of 15/15 in quiz.html)
 **/ 
 function changeSantaImage() {
     if (score <= 7) {
@@ -105,9 +100,9 @@ function changeSantaImage() {
 }
 
 /**
-Function to display the text in results, based on scores of
-either equal or less than 7 or equal or less than 14
-(default text is already set to maximum of 15/15 in quiz.html)
+* Function to display the text in results, based on scores of
+* either equal or less than 7 or equal or less than 14
+* (default text is already set to maximum of 15/15 in quiz.html)
 **/ 
 function changeScoreText() {
     if (score <= 7) {
@@ -118,6 +113,15 @@ function changeScoreText() {
     }
 }
 
-displayQuestion();
+/**
+* Event Listeners
+**/ 
+
+function initializeQuiz() {
+    next.addEventListener('click', nextQuestion);
+    displayQuestion();
+}
 
 window.addEventListener('DOMContentLoaded', initializeQuiz);
+  
+    
