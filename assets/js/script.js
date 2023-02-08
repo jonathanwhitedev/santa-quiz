@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const question = document.getElementById('question');
 const quizContainer = document.getElementById('quiz-container');
 const scorecard = document.getElementById('scorecard');

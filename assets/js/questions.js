@@ -1,6 +1,9 @@
 /**
 Questions Bank to shorten script.js code and increase efficency of site
 **/
+
+/*jshint esversion: 6 */
+
 const questionBank = [{
         question: 'What happened in the 1914 Christmas Day truce during the First World War?',
         option: ['A game of football between British and German soldiers', 'English comrades did not quarrel', 'Pope Benedict XV has ascended to the papacy', 'Everyone had Coca Cola'],

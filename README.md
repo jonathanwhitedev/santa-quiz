@@ -186,40 +186,45 @@ It is noticed however that video backgrounds do not tend to work on smartphones 
 ### Performance Testing 
 
 - Lighthouse (Chrome Dev Tools)
-  - No performance issues were returned when passing through the official Lighthouse feature on google chrome dev tools [https://developer.chrome.com/docs/lighthouse/overview/] on all 5 HTML pages of website. Scores of over 90% were present throughout as per following screenshots:
+  - Some "Best Practices" issues were returned when passing through Lighthouse on google chrome dev tools [https://developer.chrome.com/docs/lighthouse/overview/] on both the index landing page and the quiz pages. However scores of over 97% were present throughout on Performance, Accessibility and SEO.
+  - I addressed the issues with best practices by removing the font awesome cookies that was attached to the link and href of the index and quiz html pages. These were returning data that google lighthouse was scoring badly.
+  - I addressed the issues further by adding "meta http-equiv="Permissions-Policy" content="interest-cohort=() on line 9 of index and quiz pages as previously lighthouse was reporting an issue with permissions policy. I found this added meta tag on google after searching for the problem. After adding this the errors went away.
+  - With these updated changes the score was improved to 92% as you can see in the screenshots below: 
 
   Index Page
- ![Index Test](docs/screenshots/chromelighthouseresul
- t-index.png)
-  
-  About Page
- ![About Test](docs/screenshots/chromelighthouseresult-about.png)
+ ![Lighthouse Test](docs/screenshots/lighthouse-test-index.png)
 
-  Spotlight Page
- ![Spotlight Test](docs/screenshots/chromelighthouseresult-spotlight.png)
+  Quiz Page (Game Area)
+ ![Lighthouse Test](docs/screenshots/lighthouse-test-js.png)
 
-  Sign Up Page
- ![Sign Up Test](docs/screenshots/chromelighthouseresult-signup.png)
+### JavaScript Testing 
 
-  Welcome Page
- ![Welcome Test](docs/screenshots/chromelighthouseresult-welcome.png)
+- Js Hint
+  - There were a few issues with JS hint i had to learn to encounter which are highlighted here:
+  - I had forgotten in one instance to apply a function correctly on line 122 "initializeQuiz" this helped me realise i had forgotten to add an event listener, which was then swiftly added!
+  - I kept getting a ES6 issue with using const variables in my code for the questions (19 errors!) i added /*jshint esversion: 6 */ on line 1 of the script.js and questions.js file after googling the issue whivh was only related to js hint. I left in place in the code as wasnt affecting the website.
+
+  All JS code (Combined questions and functions pages)
+ ![JS Hint Test](docs/screenshots/js-hint-testing.png)
 
 
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator] on all 5 HTML pages of website as follows: Index (https://validator.w3.org/nu/?doc=https%3A%2F%2Fjonathanwhitedev.github.io%2Fvoyager%2Findex.html) Spotlight (https://validator.w3.org/nu/?doc=https%3A%2F%2Fjonathanwhitedev.github.io%2Fvoyager%2Fspotlight.html) About (https://validator.w3.org/nu/?doc=https%3A%2F%2Fjonathanwhitedev.github.io%2Fvoyager%2Fabout.html) Sign Up (https://validator.w3.org/nu/?doc=https%3A%2F%2Fjonathanwhitedev.github.io%2Fvoyager%2Fsignup.html) Form (https://validator.w3.org/nu/?doc=https%3A%2F%2Fjonathanwhitedev.github.io%2Fvoyager%2Fsignup.html)
+  - No errors were returned when passing through the official ![W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjonathanwhitedev.github.io%2Fsanta-quiz%2F) on all pages of website as follows: 
+
+ ![HTML](docs/screenshots/html-validation.png)
+ 
+
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjonathanwhitedev.github.io%2Fvoyager%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - No errors were found when passing through the official ![(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjonathanwhitedev.github.io%2Fvoyager%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+  ![CSS](docs/screenshots/css-validation.png)
+ 
 
 ### Test Cases
-__Sign Up Page Testing:__
-1. Click on the sign up option on the nav bar. User should be redirected to signup page.
-2. Click Lets go button. User should notice error "Please fill in this field." on the First Name if it is not entered and ask for this information.
-3. Same will be applied if Last Name and Email are left blank, with same error.
-4. Until all fields are filled in, submission can then take place clicking the "Let's Go" button and redirect the user to a Welcome Page confirming sign up has successfully taken place.
-5. All testing was completed, and all was working satisfactory.
-6. See Screenshots below of test outcomes.
+__Index Page Testing:__
+1. Click on the Begin option on the index page. User should be redirected to Quiz page. Working as expected.
 
  ![Sign up Test](docs/screenshots/signup-first.png)
  ![Sign Up Test](docs/screenshots/signup-last.png)
@@ -304,7 +309,9 @@ __To open Gitpod and Voyager website preview:__
 
 ## Credits 
 
-I will firstly credit code institute for the help with this page, the love running project helped me immensely when i found the going tough or needed to remember small details such as how to use social link tags etc. I also want to shout out to the code institute tutors for some help on minor tweaks to point me in directions where i was a little lost and they helped me understand where i was going wrong. Lastly i'd like to thank my dilligent mentor who helped me research other areas such as flexbox and grid, and even told me to start with developing in mobile screens firstly and start backwards from there to desktop. (oh if i had only listened to that last advice, would have saved me so much time!) This was a steep learning curve for me but because of the minor mistakes and not following flex/media at the beginning i learnt the hard way and in turn learnt an awful lot through the stress of it all!
+I will firstly like to credit my fiancé, Toni, for this website and motivating me to get over the line and by taking on more domestic tasks! I was not in a particularly brilliant headspace with less then 2 weeks from finishing JS modules in the elearning to submission. I'd felt the strain of the learning and did not feel confident with handling javascript at all. She was very supportive and this quiz idea relating to christmas was her idea. She had already made a question bank from the previous christmas for a company party backed up and saved in her work laptop. These answers were all verified and accurate and were extremely handy to use in this quiz! 
+
+Lastly I would like to thank my mentor, Rohit, for helping impeccably as always with his wisdom and guidance which was very helpful and greatly appreciated indeed.
 
 Content and media inspiration is as follows below;
 
@@ -318,6 +325,6 @@ Content and media inspiration is as follows below;
 
 - All of the videos (5) used on all pages are from This Open Source site (http://pexels.com) these were then resaved as different file names, as text was either in russian or had spaces and would fail testing or reading for other developers.
 
-## Thank you for taking the time to view my README file, hope you enjoy the website. 
+## Thank you for taking the time to view my README file, hope you enjoy the quiz! 
 
 ## Jonathan White
