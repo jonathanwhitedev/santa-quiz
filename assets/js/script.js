@@ -12,7 +12,7 @@ let i = 0;
 let score = 0;
 
 /**
-Function to display the questions and provide statistics for rolling information
+* Function to display the questions and provide statistics for rolling information
 **/ 
 function displayQuestion() {
     for (let a = 0; a < span.length; a++) {
@@ -27,10 +27,10 @@ function displayQuestion() {
 }
 
 /**
-Function to display and calculate the score with a running score linked to container.
-Incremented by +1 if correctly answered.
-If and else statements in place to change colour of span to either green or red depending on answer.
-500 of a second timeout set to change to next question.
+* Function to display and calculate the score with a running score linked to container.
+* Incremented by +1 if correctly answered.
+* If and else statements in place to change colour of span to either green or red depending on answer.
+* 500 of a second timeout set to change to next question.
 **/ 
 function calcScore(e) {
     if (e.innerText === questionBank[i].answer && score < questionBank.length) {
@@ -44,9 +44,9 @@ function calcScore(e) {
 }
 
 /**
-Function to display the next question
-if and else statements in place to change image and texts depending on results
-and keep a rolling tally for this.
+* Function to display the next question
+* if and else statements in place to change image and texts depending on results
+* and keep a rolling tally for this.
 **/ 
 function nextQuestion() {
     if (i < questionBank.length - 1) {
@@ -63,15 +63,15 @@ function nextQuestion() {
 }
 
 /**
-Back to quiz button event
+* Back to quiz button event
 **/ 
 function backToQuiz() {
     location.reload();
 }
 
 /**
-Function to display and check the answers
-and list them in order
+* Function to display and check the answers
+* and list them in order
 **/ 
 function checkAnswer() {
     const answerBank = document.getElementById('answerBank');
