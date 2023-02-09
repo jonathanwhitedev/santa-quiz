@@ -4,7 +4,7 @@ View my live project here! [Santa's Big Christmas Quiz](https://jonathanwhitedev
 
 Santa's Big Christmas Quiz is a interactive website based quiz that is readily available to provide fun Christmas themed quizes for all. Traditionally many office parties and family get togethers incorporate a quiz of some sort, and many have to make there own quiz from scratch, trawlliing the web to find questions and answers. This website aims to fill the gap for a lack of online quizes.
 
-![Responsive Mockup](docs/screenshots/amireponsive-voyager.png)
+![Responsive Mockup](docs/screenshots/am-i-responsive.png)
 
 The following responsive screensizes of my website can also be found here: (https://ui.dev/amiresponsive?url=https://jonathanwhitedev.github.io/voyager/index.html)
 
@@ -140,7 +140,7 @@ Santa's Big Christmas Quiz includes the following;
 
 ## Typography and Colour
 
-- Typography was taken from Google Fonts using 1 base font, "Cormorant Garamond". I felt this complimented the Christmas theme well, was clean and clear to read and easily accessible. With colour schemes I chose to use 3 Christmas themed colours, Red, Gold and Blue. Being mainly primary colours these work very well together and make the style eye catching. These were applied using hex, red (#7c0017), gold (#d7be69) and blue (#3b81d6c6). Then Black (#000000) and White (#ffffff) were used for the typography for Questions and Buttons.
+- Typography was taken from Google Fonts using 1 base font, "Cormorant Garamond" and "Anton" for 1 text element for the score. I felt this complimented the Christmas theme well, was clean and clear to read and easily accessible. With colour schemes I chose to use 3 Christmas themed colours, Red, Gold and Blue. Being mainly primary colours these work very well together and make the style eye catching. These were applied using hex, red (#7c0017), gold (#d7be69) and blue (#3b81d6c6). Then Black (#000000) and White (#ffffff) were used for the typography for Questions and Buttons.
 
 Google Fonts can be found here (https://fonts.google.com/)
 
@@ -170,7 +170,7 @@ Answer Page
 __Various technologies were used in the entire process of building this website as follows;__
 - Balsamiq. This was used to make a rough template of the design of my website.
 - GitHub. To build the repository for Voyager and lay the groundwork for its development and deployment of website.
-- GitPod. Where the design came to life in the physical coding of the website building the files and folders and writing the code to commit back to GitHub. This beginning of this Readme file was written before coding took place and exxtra folders were added for HTML and Assets including CSS and media.
+- GitPod. Where the design came to life in the physical coding of the website building the files and folders and writing the code to commit back to GitHub. This beginning of this Readme file was written before coding took place and extra folders were added for HTML and Assets including CSS and media.
 - HTML. The building block for all the code and written across 5 pages, index, about, spotlight, signup, welcome.
 - CSS. The style of the website linked via stylesheets to the HTML code.
 - JavaScript. Used for all the questions and variables of the quiz, including calculating the score through additions, changing the colour of the question "Green" for correctly answered and "Red" for incorrect answered questions. Additionally, functions were added to change the image and text depending on the Results score.
@@ -186,8 +186,8 @@ __Various technologies were used in the entire process of building this website 
 
 Overall, I am very happy with the testing outcomes with lighthouse, HTML, and CSS validation. Js Hint was an invaluable tool to help make sense of javascript when certain functions were not performing as expected and would give you guidance on how to fix or improve. I had a couple of intances where I had not properly assigned a function, so this as extremely handy as a reminder.
 Jigsaw spotted anothe error I rectified where i was using "padding auto" on a button on line 210 of my CSS file which does nothing! This was swiftly removed as was causing validation issues.
-I have tested this website on a macbook pro with a 32 inch external monitor, an Ipad Pro, and a Iphone 13 pro max. I have also used reponsive design in Google dev tools with other devices such as a Surface Duo, Samsung galaxy devices including the fold, and other smaller devices of 280px max width. 
-The CSS code was written first and foremost for a smartphone to save on time and to also accept that many people now use hones as a preferred way to browse the web. The ability to be scaled up with media queries for bigger devices when required.
+I have tested this website on a macbook pro with a 32 inch external monitor, an Ipad Pro, and a Iphone 13 pro max. I have also used reponsive design in Google dev tools with other devices such as a Surface Duo, Samsung galaxy devices including the fold'.
+The CSS code was written first and foremost for a smartphone to save on time and to also accept that many people now use hones as a preferred way to browse the web. The ability to be scaled up with media queries for bigger devices when required.I made one small media query to enhance playing the game on bigger devices past 750px width.
 
 The website runs smoothly across all used devices with no glitches or errors.
 
@@ -271,6 +271,7 @@ __Scoring System for Image and Text Scorecard Testing:__
 ### Supported Browsers and Screen Sizes.
   - Testing was carried out on Google Chrome, Safari, and Mozilla Firefox. All rendered the content and was fast and reponsively across these browsers.
   - Testing was carried out on Macbook Pro M1, Ipad Pro, and Iphone 13 Pro Max models in personal collection. 
+  - There is one media query stepping up sizes after hitting a minimum width of 750px. I designed this mostly as a mobile first application.
 
 ### Unfixed Bugs
 
@@ -320,11 +321,15 @@ __To open Gitpod and Voyager website preview:__
 
 I will firstly like to credit my fiancé, Toni, for this website and motivating me to get over the line and by taking on more domestic tasks! I was not in a particularly brilliant headspace with less then 2 weeks from finishing JS modules in the elearning to submission. I'd felt the strain of the learning and did not feel confident with handling javascript at all. She was very supportive and this quiz idea relating to christmas was hers. She had already made a question bank from the previous christmas for a company party backed up and saved in her work laptop. These answers were all verified and accurate and were extremely handy to use in this quiz! 
 
+ I found a simple quiz project builder on google at https://simplestepscode.com/javascript-quiz-tutorial/ which helped find the basics of making this quiz and took my own spin on it with this finshed result. With thanks to them for their publication in helping me break it down step by step.
+
 Lastly I would like to thank my mentor, Rohit, for helping impeccably as always with his wisdom and guidance which was very helpful and greatly appreciated indeed.
 
 Content and media inspiration is as follows below;
 
 ### Content 
+
+_ All of the ideas in relation to this quiz including format, image selection, colour schemes were all my own. However the following helped me get there:
 
 - The social icons in the bottom of section of all pages were taken from [Font Awesome](https://fontawesome.com/)
 - The webkit stroke function was found after heavy research in needing a solution to allow text to pop off the background to be unique and more readble against the background colours in the scorecards, this was found at (https://css-tricks.com/adding-stroke-to-web-text/) I then incorporated this into my css for my specific needs.
