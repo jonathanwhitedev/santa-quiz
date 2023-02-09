@@ -4,7 +4,7 @@ View my live project here! [Santa's Big Christmas Quiz](https://jonathanwhitedev
 
 Santa's Big Christmas Quiz is a interactive website based quiz that is readily available to provide fun Christmas themed quizes for all. Traditionally many office parties and family get togethers incorporate a quiz of some sort, and many have to make there own quiz from scratch, trawlliing the web to find questions and answers. This website aims to fill the gap for a lack of online quizes.
 
-![Responsive Mockup](screenshots/am-i-responsive.png)
+![Responsive Mockup](docs/screenshots/am-i-responsive.png)
 
 The following responsive screensizes of my website can also be found here: (https://ui.dev/amiresponsive?url=https://jonathanwhitedev.github.io/voyager/index.html)
 
