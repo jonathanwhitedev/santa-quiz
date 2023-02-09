@@ -361,9 +361,10 @@ span {
         font-size: 0.8em;
     }
 
-    #scoreboard, #answerBank {
+    #scoreboard,
+    #answerBank {
         width: 12rem;
-       
+
     }
 
     .santa-image {
