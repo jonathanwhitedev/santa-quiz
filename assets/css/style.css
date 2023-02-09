@@ -36,22 +36,24 @@ h4 {
     line-height: 0.2em;
 }
 
-/* Special Heading Sizes for Landing Page */
+/* Centre everything for any screen size for opening landing page */
 
 .landingarea {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
-    min-height: 500px;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    flex-direction: column;
+  } 
+/* Special Heading Sizes for Landing Page */
 
 .headingsanta {
     font-size: 4em;
     color: #7c0017;
     line-height: 1em;
     position: relative;
-    bottom: 68px;
+    bottom: 65px;
     text-decoration: overline 4px;
 }
 
@@ -60,7 +62,7 @@ h4 {
     color: #d7be69;
     line-height: 1em;
     position: relative;
-    bottom: 158px;
+    bottom: 197px;
 }
 
 .headingchristmas {
@@ -68,7 +70,7 @@ h4 {
     font-size: 2.6em;
     line-height: 1em;
     position: relative;
-    bottom: 245px;
+    bottom: 310px;
 }
 
 .headingquiz {
@@ -76,12 +78,8 @@ h4 {
     color: #d7be69;
     line-height: 1em;
     position: relative;
-    bottom: 302px;
+    bottom: 395px;
     text-decoration: underline 4px;
-}
-
-.landingarea {
-    width: 50vh;
 }
 
 /* Buttons in game */
@@ -109,7 +107,7 @@ button:active {
 
     line-height: 1em;
     position: relative;
-    bottom: 300px;
+    bottom: 420px;
     padding: 0.5rem 1.5rem;
     border: none;
     font-size: 1rem;
@@ -132,7 +130,9 @@ button:active {
     display: flex;
     padding: 5px;
     justify-content: space-evenly;
-    margin-top: -250px;
+    margin-top: -400px;
+    border: 20px;
+    gap: 50px;
 }
 
 .social-landing>li {
@@ -141,7 +141,7 @@ button:active {
 }
 
 .social-landing i {
-    font-size: 160%;
+    font-size: 25px;
     padding: 5%;
     color: #7c0017;
 }
@@ -159,7 +159,7 @@ button:active {
 }
 
 .social-networks i {
-    font-size: 160%;
+    font-size: 25px;
     padding: 5%;
     color: #7c0017;
 }
@@ -272,6 +272,7 @@ span {
 }
 
 /* Results text changable based on js calculation */
+/* webkit stroke used to stand out against background using black on gold */
 .result-text {
     font-family: Anton;
     font-size: 2em;
@@ -280,3 +281,41 @@ span {
     -webkit-text-stroke: 0.5px #000000;
     margin: auto;
 }
+
+@media (min-width: 750px) {
+   
+    
+    h4 {
+        font-size: 1.6em;
+    }
+    #question {
+        font-size: 2em;
+    }
+    .option {
+        font-size: 1.6rem;
+        width: 20rem;
+    }
+    button {
+        font-size: 1.4em;
+    }
+    #scoreboard, #answerBank {
+        width: 30rem;
+    }
+    .santa-image {
+        width: 30em;
+    }
+    .result-text {
+        font-size: 4em;
+    }
+    #score {
+        font-size: 2.6rem;
+    }
+    .social-landing i {
+        font-size: 35px;
+    }
+    .social-networks i {
+    font-size: 35px;
+    }
+
+}
+
