@@ -272,7 +272,7 @@ __Scoring System for Image and Text Scorecard Testing:__
 
 ### Unfixed Bugs
 
-No extra bugs were found upon testing through above and I'm happy this is a responsive clean webpage. 
+There were no bugs present that were unfixed. There were some recommendations that there were some unused variables in JSHint however these are not being used as JavaScript functions but for styling purposes in CSS. 
 
 ## Deployment
   - The site was deployed to GitHub pages. The live link can be found here - https://jonathanwhitedev.github.io/voyager/
@@ -326,13 +326,12 @@ Content and media inspiration is as follows below;
 
 ### Content 
 
-- The button anchor tags design sections were taken from finding them on Traversy Media youtube channel and video https://www.youtube.com/watch?v=8MgpE2DTTKA&t=1114s these were then redesigned further with colour that was suitable for the page and font/sizes. The same video was also used for finding social li a transform scales to improve look of social icons and pop from page.
 - The social icons in the bottom of section of all pages were taken from [Font Awesome](https://fontawesome.com/)
-- The webkit stroke function was found after heavy research in needing a solution to allow text to pop off the background to be unique and more readble against the background colours and video content, this was found at (https://css-tricks.com/adding-stroke-to-web-text/) I then incorporated this into my css for my specific needs.
+- The webkit stroke function was found after heavy research in needing a solution to allow text to pop off the background to be unique and more readble against the background colours in the scorecards, this was found at (https://css-tricks.com/adding-stroke-to-web-text/) I then incorporated this into my css for my specific needs.
 
 ### Media
 
-- All of the videos (5) used on all pages are from This Open Source site (http://pexels.com) these were then resaved as different file names, as text was either in russian or had spaces and would fail testing or reading for other developers.
+- All of the Images used on all pages were found on google images (http://google.co.uk/search) these were then resaved as different file names, as text was either in alternate language to english or had spaces and would fail testing or reading for other developers.
 
 ## Thank you for taking the time to view my README file, hope you enjoy the quiz! 
 
