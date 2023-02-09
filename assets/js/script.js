@@ -1,5 +1,4 @@
 /*jshint esversion: 6 */
-
 const question = document.getElementById('question');
 const quizContainer = document.getElementById('quiz-container');
 const scorecard = document.getElementById('scorecard');
@@ -14,8 +13,8 @@ let i = 0;
 let score = 0;
 
 /**
-* Function to display the questions and provide statistics for rolling information
-**/ 
+ * Function to display the questions and provide statistics for rolling information
+ **/
 function displayQuestion() {
     for (let a = 0; a < span.length; a++) {
         span[a].style.background = 'none';
@@ -29,11 +28,11 @@ function displayQuestion() {
 }
 
 /**
-* Function to display and calculate the score with a running score linked to container.
-* Incremented by +1 if correctly answered.
-* If and else statements in place to change colour of span to either green or red depending on answer.
-* 500 of a second timeout set to change to next question.
-**/ 
+ * Function to display and calculate the score with a running score linked to container.
+ * Incremented by +1 if correctly answered.
+ * If and else statements in place to change colour of span to either green or red depending on answer.
+ * 500 of a second timeout set to change to next question.
+ **/
 function calcScore(e) {
     if (e.innerText === questionBank[i].answer && score < questionBank.length) {
         score = score + 1;
@@ -46,10 +45,10 @@ function calcScore(e) {
 }
 
 /**
-* Function to display the next question
-* if and else statements in place to change image and texts depending on results
-* and keep a rolling tally for this.
-**/ 
+ * Function to display the next question
+ * if and else statements in place to change image and texts depending on results
+ * and keep a rolling tally for this.
+ **/
 function nextQuestion() {
     if (i < questionBank.length - 1) {
         i = i + 1;
@@ -65,16 +64,16 @@ function nextQuestion() {
 }
 
 /**
-* Back to quiz button event
-**/ 
+ * Back to quiz button event
+ **/
 function backToQuiz() {
     location.reload();
 }
 
 /**
-* Function to display and check the answers
-* and list them in order
-**/ 
+ * Function to display and check the answers
+ * and list them in order
+ **/
 function checkAnswer() {
     const answerBank = document.getElementById('answerBank');
     const answers = document.getElementById('answers');
@@ -88,10 +87,10 @@ function checkAnswer() {
 }
 
 /**
-* Function to display the santa image in results, based on scores of
-* either equal or less than 7 or equal or less than 14
-* (default is already set to maximum of 15/15 in quiz.html)
-**/ 
+ * Function to display the santa image in results, based on scores of
+ * either equal or less than 7 or equal or less than 14
+ * (default is already set to maximum of 15/15 in quiz.html)
+ **/
 function changeSantaImage() {
     if (score <= 7) {
         document.getElementById('santa-img').src = 'assets/images/bad-santa.jpeg';
@@ -102,10 +101,10 @@ function changeSantaImage() {
 }
 
 /**
-* Function to display the text in results, based on scores of
-* either equal or less than 7 or equal or less than 14
-* (default text is already set to maximum of 15/15 in quiz.html)
-**/ 
+ * Function to display the text in results, based on scores of
+ * either equal or less than 7 or equal or less than 14
+ * (default text is already set to maximum of 15/15 in quiz.html)
+ **/
 function changeScoreText() {
     if (score <= 7) {
         document.getElementById('score-text').innerText = 'BAD SANTA!';
@@ -116,8 +115,8 @@ function changeScoreText() {
 }
 
 /**
-* Event Listeners
-**/ 
+ * Event Listeners
+ **/
 
 function initializeQuiz() {
     next.addEventListener('click', nextQuestion);
@@ -125,5 +124,3 @@ function initializeQuiz() {
 }
 
 window.addEventListener('DOMContentLoaded', initializeQuiz);
-  
-    
