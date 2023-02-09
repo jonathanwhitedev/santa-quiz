@@ -180,10 +180,12 @@ __Various technologies were used in the entire process of building this website 
 - W3 Validator. Used to ensure all HTML code was working with no errors.
 - Jigsaw Validator. USed to ensure all CSS code met best practices and was working with no errors.
 - Lightouse. Used to ensure testing of performance met expectations wit no severe errors or performance issues. 
+- JS Hint. This was used to test the functionality of my javascript codes and functions and to ensure nothing was returning errors.
 
 ## Testing 
 
 Overall, I am very happy with the testing outcomes with lighthouse, HTML, and CSS validation. Js Hint was an invaluable tool to help make sense of javascript when certain functions were not performing as expected and would give you guidance on how to fix or improve. I had a couple of intances where I had not properly assigned a function, so this as extremely handy as a reminder.
+Jigsaw spotted anothe error I rectified where i was using "padding auto" on a button on line 210 of my CSS file which does nothing! This was swiftly removed as was causing validation issues.
 I have tested this website on a macbook pro with a 32 inch external monitor, an Ipad Pro, and a Iphone 13 pro max. I have also used reponsive design in Google dev tools with other devices such as a Surface Duo, Samsung galaxy devices including the fold, and other smaller devices of 280px max width. 
 The CSS code was written first and foremost for a smartphone to save on time and to also accept that many people now use hones as a preferred way to browse the web. The ability to be scaled up with media queries for bigger devices when required.
 
@@ -223,7 +225,7 @@ The website runs smoothly across all used devices with no glitches or errors.
  
 
 - CSS
-  - No errors were found when passing through the official ![(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjonathanwhitedev.github.io%2Fvoyager%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - No errors were found on completion when passing through the official ![(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjonathanwhitedev.github.io%2Fvoyager%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
   ![CSS](docs/screenshots/css-validation.png)
  
@@ -275,50 +277,48 @@ __Scoring System for Image and Text Scorecard Testing:__
 There were no bugs present that were unfixed. There were some recommendations that there were some unused variables in JSHint however these are not being used as JavaScript functions but for styling purposes in CSS. 
 
 ## Deployment
-  - The site was deployed to GitHub pages. The live link can be found here - https://jonathanwhitedev.github.io/voyager/
+  - The site was deployed to GitHub pages. The live link can be found here - https://github.com/jonathanwhitedev/santa-quiz
 
   __To deploy the project:__
-   1. In the [GitHub repository](https://github.com/jonathanwhitedev/voyager), Navigate to the settings tab.
+   1. In the [GitHub repository](https://github.com/jonathanwhitedev/santa-quiz), Navigate to the settings tab (small red box in image below).
    2. Once in the settings, navigate to the pages tab on the left hand side.
    3. In the build and deployment section under Branch, select the "master" branch and click Save.
-   4. Once the master branch has been selected, the page will be automatically refreshed and a display indicates the successful deployment and the link to the address as below.
-   5. All steps pictured below with corresponding numbers.
+   4. Once the master branch has been selected, the page will be automatically refreshed and a display indicates the successful deployment and the link to the address as below (large red box).
 
-   ![Deployment](docs/screenshots/Deploy-project.png)
+   ![Deployment](docs/screenshots/repository-1.png)
 
 __To open Gitpod and Voyager website preview:__
-   1. In the [GitHub repository](https://github.com/jonathanwhitedev/voyager), click the green Gitpod button. This will open GitPod.
+   1. In the [GitHub repository](https://github.com/jonathanwhitedev/santa-quiz), click the green Gitpod button. This will open GitPod.
    2. Once in GitPod, click the tab hamburger button in top left corner, navigate to Terminal and highlight and click "New Terminal".
-   3. In the Terminal after gitpod /workspace/voyager, type the following command "python3 -m http.server" and hit the enter key.
+   3. In the Terminal after gitpod/workspace/santa-quiz, type the following command "python3 -m http.server" and hit the enter key.
    4. Once entered correctly a pop up will appear in bottom left corner displaying a service port is available. Click "Open Browser" and the website preview will open in a brand new tab.
-   5. All steps pictured below with corresponding numbers.
+   5. All steps pictured below and highlighted in red boxes.
 
-   ![Deployment](docs/screenshots/github-gitpod.png)
-   ![Deployment](docs/screenshots/gitpod-terminal.png)
-   ![Deployment](docs/screenshots/gitpod-service-port.png)
+   ![Deployment](docs/screenshots/repository.png)
+   ![Deployment](docs/screenshots/terminal-commands1.png)
+   ![Deployment](docs/screenshots/terminal-command2.png)
 
 ### Extra Deployment Tasks
  __To run the website on a local screen:__
-   1. Go to the [GitHub repository](https://github.com/jonathanwhitedev/voyager).
+   1. Go to the [GitHub repository](https://github.com/jonathanwhitedev/santa-quiz).
    2. Once in there, click on the green Code button and Download ZIP.
    3. Extract the ZIP file on your local machine.
    4. Run the index.html file in a browser.
-   5. All steps pictured below with corresponding numbers.
+   5. All steps pictured below with red highlighted boxes.
 
-   ![Deployment](docs/screenshots/Deploy-project.png)
+   ![Deployment](docs/screenshots/local-website.png)
 
  __To clone the repo:__
-   1. Go to the [GitHub repository](https://github.com/jonathanwhitedev/voyager).
+   1. Go to the [GitHub repository](https://github.com/jonathanwhitedev/santa-quiz).
    2. Click on the green Code button and directly underneath as shown, copy the HTTPs link there.
    3. Open a GitBash terminal and navigate to the directory where you want to locate the clone.
    4. Type "git clone" and paste the copied HTTPs link, press the enter key to begin the clone process.
-   5. All steps pictured below with corresponding numbers.
 
-   ![Deployment](docs/screenshots/Deploy-project.png)
+   ![Deployment](docs/screenshots/clone-repo.png)
 
 ## Credits 
 
-I will firstly like to credit my fiancé, Toni, for this website and motivating me to get over the line and by taking on more domestic tasks! I was not in a particularly brilliant headspace with less then 2 weeks from finishing JS modules in the elearning to submission. I'd felt the strain of the learning and did not feel confident with handling javascript at all. She was very supportive and this quiz idea relating to christmas was her idea. She had already made a question bank from the previous christmas for a company party backed up and saved in her work laptop. These answers were all verified and accurate and were extremely handy to use in this quiz! 
+I will firstly like to credit my fiancé, Toni, for this website and motivating me to get over the line and by taking on more domestic tasks! I was not in a particularly brilliant headspace with less then 2 weeks from finishing JS modules in the elearning to submission. I'd felt the strain of the learning and did not feel confident with handling javascript at all. She was very supportive and this quiz idea relating to christmas was hers. She had already made a question bank from the previous christmas for a company party backed up and saved in her work laptop. These answers were all verified and accurate and were extremely handy to use in this quiz! 
 
 Lastly I would like to thank my mentor, Rohit, for helping impeccably as always with his wisdom and guidance which was very helpful and greatly appreciated indeed.
 
