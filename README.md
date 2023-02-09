@@ -99,6 +99,12 @@ Santa's Big Christmas Quiz includes the following;
 
   ![Footer](docs/screenshots/footer-social.png)
 
+  - __Favicon Icon__ 
+
+   - The Favicon Icon of Santa claus is displayed in the browser tab to confirm you are at the correct page for easier navigation when multiple tabs are open and adds usability and humour to the end user.
+
+  ![Browser Icon](docs/screenshots/favicon-icon.png)
+
   - __Statistics Container__ 
 
   - This is a container in gold (#d7be69) displaying a rolling questions and correctly answered information to the user using javascript interaction.
@@ -177,11 +183,11 @@ __Various technologies were used in the entire process of building this website 
 
 ## Testing 
 
-Overall, I am very happy with the testing outcomes with lighthouse, HTML, and CSS validation. I was concerned the video backgrounds may have an effect upon this but im glad that choosing short videos with lower quality may have helped my cause with this. I have tested all pages and functions, clickable links of social media links in nav bar as well as buttons, forms, and nav bar buttons. All of these work fast and clean for optimisation for the user to have a streamless experience on the website, all of their goals can be met simply and concisely with straightforward webpages that are engaging.
+Overall, I am very happy with the testing outcomes with lighthouse, HTML, and CSS validation. Js Hint was an invaluable tool to help make sense of javascript when certain functions were not performing as expected and would give you guidance on how to fix or improve. I had a couple of intances where I had not properly assigned a function, so this as extremely handy as a reminder.
+I have tested this website on a macbook pro with a 32 inch external monitor, an Ipad Pro, and a Iphone 13 pro max. I have also used reponsive design in Google dev tools with other devices such as a Surface Duo, Samsung galaxy devices including the fold, and other smaller devices of 280px max width. 
+The CSS code was written first and foremost for a smartphone to save on time and to also accept that many people now use hones as a preferred way to browse the web. The ability to be scaled up with media queries for bigger devices when required.
 
-I have tested this website on a macbook pro with a 32 inch external monitor, an Ipad Pro, and a Iphone 13 pro max. I have also used reponsive design in Google dev tools with other devices such as a Surface Duo, Samsung galaxy devices including the fold, and other smaller devices of 280px max width. These were written with extensive media queries to be inclusive for all users regardless of the device they use.
-
-It is noticed however that video backgrounds do not tend to work on smartphones - my personal iphone 13 pro max for instance. This may be because of the memory usage this website requires, however, i am happy that although the video may not play, a still of the video is still present and does in no way detract from the user experience and all functions still work fast and efficiently.
+The website runs smoothly across all used devices with no glitches or errors.
 
 ### Performance Testing 
 
@@ -224,42 +230,45 @@ It is noticed however that video backgrounds do not tend to work on smartphones 
 
 ### Test Cases
 __Index Page Testing:__
-1. Click on the Begin option on the index page. User should be redirected to Quiz page. Working as expected.
+1. User hovers over on the Begin option on the landing index page. A curser pointer hand will be displayed. User should be redirected to Quiz start page first question when clicked upon. Working as expected every time.
 
- ![Sign up Test](docs/screenshots/signup-first.png)
- ![Sign Up Test](docs/screenshots/signup-last.png)
- ![Sign up Test](docs/screenshots/signup-email.png)
+ ![Begin Button](docs/screenshots/begin-button.png)
+ ![Quiz Start](docs/screenshots/quiz-page-test.png)
 
  __Social Link Testing:__
- 1. User hovers over any of the 4 social media links at bottom of page. An animation should take place where the link rises 5px upwards as a transition.
+ 1. User hovers over any of the 3 social media links at bottom of page on Inde Landing page and also the Results pages of the end of the quiz. A curser pointer hand appears directly over the link.
  2. A pop up text also appears on hover that displays a message that the website will open on in a new tab. 
- 3. When clicked upon any of the 4 links, it will open in a seperate new tab.
+ 3. When clicked upon any of the 3 links, it will open in a seperate new tab.
  4. All testing was completed, and all was working satisfactory.
  5. See Screenshots below of test outcomes.
 
- ![Social Link Test](docs/screenshots/social-icons.png)
- ![Social Link Test](docs/screenshots/social-link.png)
+ ![Social Link Test](docs/screenshots/footer-social.png)
+ ![Social Link Test](docs/screenshots/social-media-links.png)
 
- __Button Testing:__
- 1. User clicks on any button in the "Nav" bar on any page, and was tested for fast accurate response to open the page intended.
- 2. User clicks on the "Vg" Button in top right of page and this will always bring the user back to the Home or "index.html" page.
- 3. User can click on any of the coloured buttons on all pages "Lets Explore", "Where to Next?", "Sign Up Today", "Lets Go" (form section), and "Back to Home" and again thry are fast and direct and move the user intuitively through the website without relying on the Nav bar (although this too can be used at any point)
- 4. When hovered over the coloured white buttons, these will expand in transition and the background colour and text colour will revert to opposite in colour.
- 5. All testing was completed, and all was working satisfactory.
- 6. See Screenshots below of test outcomes.
+ __Quiz Button Testing:__
+ 1. User clicks on any answer button between (A-D) in the "Quiz" page, this was tested for fast accurate response to move to the next question.
+ 2. When user clicks on a correctly answered question the span of the button will change colour to 'Green' before moving to next question, this is working correctly only on the correct answers.
+ 3. When user clicks on a incorrectly answered question the span of the button will change colour to 'Red' before moving to next question, this is working correctly only on the incorrect answers.
+ 4. "Skip Question" button works to provide an easy way of skipping the question without answering it. This will prevent the user picking up any points and a total of none will be given if every question is subsequently skipped. This is working as expected.
+ 5. "Check Answers" button appears on the scorecard at the end of the quiz and works correctly, displaying all the correct answers for the questions in a new container.
+ 6. "Restart Quiz" also appears on scorecard and answer cards at the end of the quiz. These correctly move the user back to question 1 of the quiz.
 
-![Button Test](docs/screenshots/button-before.png)
-![Button Test](docs/screenshots/button-after.png)
+![Button Test Colour Change Green](docs/screenshots/correct-answer-green.png)
+![Button Test Colour Change Red](docs/screenshots/wrong-answer-red.png)
 
-__Video Background Testing:__
- 1. User views the playing Video source in the background. 
- 2. These should continue to play without interuption and loop and repeat on completion so they continually loop and play on all 5 pages.
- 3. Watching the transistion on all 5 pages confirmed this took place and replayed on loop.
- 3. All testing was completed, and all was working satisfactory.
+__Scoring System for Image and Text Scorecard Testing:__
+ 1. User plays the quiz of 15 questions and depending upon the results gets given a different image/text scorecard based on final calculation (3 Images/3 Texts total) All 3 of these outcomes have been tested extensively ranging from deliberately scoring every score between 1 -15 correctly with no issues found.
+ 2. If the player gets a score of 7 or less (<=7) BAD SANTA! appears with the image from the film bad santa.
+ 3. If the player gets a score of 14 or less (<=14) SANTA BABY! appears with the relavent image.
+ 4. If the player gets a maximum score of 15 (default score)) YOU'RE A WINNER! appears with the relavent image.
+
+![BAD SANTA](docs/screenshots/badsanta-test.png)
+![SANTA BABY](docs/screenshots/santababy-test.png)
+![YOU'RE A WINNER](docs/screenshots/winner-test.png)
 
 ### Supported Browsers and Screen Sizes.
-  - Testing was carried out on Google Chrome, Safari, and Mozilla Firefox. All played the video and content fast and reponsively across these browsers.
-  - Testing was carried out on Macbook Pro M1, Ipad Pro, and Iphone 13 Pro Max models in personal collection. I also optimized for other devices such as a Surface Duo, Samsung galaxy devices including the fold, and other smaller devices of 280px max width. All passed these tests.
+  - Testing was carried out on Google Chrome, Safari, and Mozilla Firefox. All rendered the content and was fast and reponsively across these browsers.
+  - Testing was carried out on Macbook Pro M1, Ipad Pro, and Iphone 13 Pro Max models in personal collection. 
 
 ### Unfixed Bugs
 
